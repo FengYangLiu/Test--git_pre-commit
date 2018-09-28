@@ -1,0 +1,39 @@
+{
+  "name": "test--git_pre-commit",
+  "version": "1.0.0",
+  "description": "测试提交检测",
+  "main": "index.js",
+  "dependencies": {
+    "pre-commit": "^1.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.0.1",
+    "lint-staged": "^7.3.0",
+    "pre-commit": "^1.2.2",
+    "snazzy": "^8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.js": [
+        "./node_modules/.bin/eslint --fix",
+        "git add"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FengYangLiu/Test--git_pre-commit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FengYangLiu/Test--git_pre-commit/issues"
+  },
+  "homepage": "https://github.com/FengYangLiu/Test--git_pre-commit#readme"
+}
