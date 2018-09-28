@@ -19,7 +19,7 @@
     "lint": "eslint src --ext .js --cache --fix"
   },
   "husky": {
-    "installType":"overwrite",
+    "installType": "overwrite",
     "hooks": {
       "commit-msg": "echo $HUSKY_GIT_PARAMS",
       "pre-commit": "npm run precommit"
