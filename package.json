@@ -18,6 +18,12 @@
     "precommit": "lint-staged",
     "lint": "eslint src --ext .js --cache --fix"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "echo $HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run precommit"
+    }
+  },
   "lint-staged": {
     "linters": {
       "src/**/*.js": [
